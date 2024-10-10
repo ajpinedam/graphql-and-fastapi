@@ -9,29 +9,6 @@ class Talk(BaseModel):
     speaker: str
     date: str | None = None
 
-class Product(BaseModel):
-    id: int
-    name: str
-    description: str
-    price: float
-    stock: int
-    category: str
-    brand: str
-    weight: float
-    dimensions: str
-    color: str
-    material: str
-    warranty: str
-    rating: float
-    reviews: int
-    sku: str
-    upc: str
-    manufacturer: str
-    model_number: str
-    release_date: str
-    discontinued: bool
-
-
 talks : list[Talk] = [
     Talk(id=1, title="Introduction to FastAPI", speaker="Jean Phillip", date="2024-10-01"),
     Talk(id=2, title="Introduction to GraphQL", speaker="Simone", date="2024-10-11"),
